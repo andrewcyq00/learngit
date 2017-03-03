@@ -1,0 +1,22 @@
+In local path:
+	1. git init
+	2. Create files in this path or sub-path
+	3. git add file1.txt file2.txt file3.txt
+	4. git commit -m "here is description sentences"
+	5. After revise of files:
+		a. git states
+		b. git diff
+	6. Then git add  && git commit again
+	7. When finish and want to upload to Github:
+		a. if new computer:
+			i. Create new SSH key: $ ssh-keygen -t rsa -C "youremail@example.com" and press enter all the way;
+			ii. Add SSH key to Github account, paste contents in id_rsa.pub, a hidden file in home directory;
+			iii. continue steps below.
+		b. if computer with pre-set SSH key:
+			i. Create a new repository in Github e.g., ILL_onedrive;
+			ii. $ git remote add origin git@github.com:andrewcyq00/ILL_onedrive.git (this command should be in the "git init" folder) (if use URL of the repository, then need to input username and password every upload, so the given form if preferred);
+			iii. For the first time to upload, use $ git push -u origin master;
+			iv. For the push afterwards, use $ git push origin master.
+
+Simplified version after revise of files:
+git add  all files  ->  git commit -m "description"  ->  git push origin master  
